@@ -30,11 +30,11 @@
 			</div>
 			<div class ="col-sm-3">
 				<h5>SCU ID</h5>
-				<input type="text" required name="id" id="id" oninput="checkId(this.id,11)" placeholder="SCU ID"><br>
+				<input type="text" required name="id" id="id" placeholder="SCU ID"><br>
 			</div>
 			<div class ="col-sm-3">
 				<h5>Major</h5>
-				<input type="text" required name="major" placeholder="Major" id="major" oninput="checkLetters(this.id,true)"><br>
+				<input type="text" required name="major" placeholder="Major" id="major"><br>
 			</div>
 		</div>
 
@@ -45,7 +45,7 @@
 			</div>
 			<div class ="col-sm-3">
 				<h5>Advisor</h5>
-				<input type="text" required name="advisor" placeholder="Advisor" id="advisor" oninput="checkLetters(this.id,true)"><br>
+				<input type="text" required name="advisor" placeholder="Advisor" id="advisor"><br>
 			</div>
 			<div class ="col-sm-3">
 				<h5>Advisor Email</h5>
@@ -272,33 +272,33 @@
 			<div class = "row">
 				<div class ="col-sm-3">
 					<h5>Account</h5>
-					<input type='text' id="RAAcc" oninput="checkLetters(this.id,true)" name='RAAcc' placeholder="Account">
+					<input type='text' id="RAAcc" name='RAAcc' placeholder="Account">
 				</div>
 				<div class ="col-sm-3">
 					<h5>Fund</h5>
-				  	<input type='text' id="RAFund" oninput="checkLetters(this.id,true)" name='RAFund' placeholder="Fund">
+				  	<input type='text' id="RAFund" name='RAFund' placeholder="Fund">
 			  	</div>
 			  	<div class ="col-sm-3">
 					<h5>Dept.</h5>
-				  	<input type='text' id="RADept" oninput="checkLetters(this.id,true)" name='RADept' placeholder="Department">
+				  	<input type='text' id="RADept" name='RADept' placeholder="Department">
 			  	</div>
 			  	<div class ="col-sm-3">
 				  	<h5>Prgm. Code</h5>
-				  	<input type='text' id="RAcode" oninput="checkAlphaNumeric(this.id,true)" name='RAcode' placeholder="Prgm. Code">
+				  	<input type='text' id="RAcode" name='RAcode' placeholder="Prgm. Code">
 			  	</div>
 		 	</div>
 		 	<div class ="row">
 			  	<div class ="col-sm-3">
 				  	<h5>Activity</h5>
-				  	<input type='text' id="RAAct" oninput="checkLetters(this.id,true)" name='RAAct' placeholder="Activity">
+				  	<input type='text' id="RAAct" name='RAAct' placeholder="Activity">
 			  	</div>
 			  	<div class ="col-sm-3">
 				  	<h5>Class</h5>
-				  	<input type='text' id="RAClass" oninput="checkAlphaNumeric(this.id)" name='RAClass' placeholder="Class">
+				  	<input type='text' id="RAClass" name='RAClass' placeholder="Class">
 			  	</div>
 			  	<div class ="col-sm-3">
 				  	<h5>Project ID</h5>
-				  	<input type='text' id="RAId" oninput="checkId(this.id)" name='RAId' placeholder="Project ID">
+				  	<input type='text' id="RAId" me='RAId' placeholder="Project ID">
 			  	</div>
 		  	</div>
 
@@ -310,15 +310,15 @@
 		<div class = "row">
 			<div class ="col-sm-4">
 				<h5>Academic Year</h5>
-				<input type="text" required name="year" id="year" oninput="checkId(this.id,4)" placeholder="Academic Year"><br>
+				<input type="text" required name="year" id="year" placeholder="Academic Year"><br>
 			</div>
 			<div class ="col-sm-4">
 				<h5>Quarter</h5>
-				<input type="text" required name="quarter" id="quarter" oninput="checkLetters(this.id)" placeholder="Quarter"><br>
+				<input type="text" required name="quarter" id="quarter"eholder="Quarter"><br>
 			</div>
 			<div class ="col-sm-4">
 				<h5>Hiring Dept/Pgm</h5>
-				<input type="text" required name="hdept" id="hdept" oninput="checkLetters(this.id,true)" placeholder="Hiring Department"><br>
+				<input type="text" required name="hdept" id="hdept" placeholder="Hiring Department"><br>
 			</div>
 		</div>
         <br>
@@ -340,11 +340,11 @@
         <div class = "row">
         	<div class = "col-sm-4">
         		<h5>Course ID</h5>
-				1. <input type="text" required name="cid1" id="cid1" oninput="checkId(this.id,5)" placeholder="ID">
+				1. <input type="text" required name="cid1" id="cid1" placeholder="ID">
 			</div>
 			<div class = "col-sm-4">
 				<h5>Course Title</h5>
-				<input type="text"  required name="ctitle1" id="ctitle1" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+				<input type="text"  required name="ctitle1" id="ctitle1" placeholder="Title">
 			</div>
 			<div class = "col-sm-4">
 				<h5>Number of Credits</h5>
@@ -356,10 +356,10 @@
 
 		<div class = "row" id="class_2" style="display:none">
         	<div class = "col-sm-4">
-				2. <input type="text" name="cid2" id="cid2" oninput="checkId(this.id,5)" placeholder="ID">
+				2. <input type="text" name="cid2" id="cid2" placeholder="ID">
 			</div>
 			<div class = "col-sm-4">
-				<input type="text" name="ctitle2" id="ctitle2" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+				<input type="text" name="ctitle2" id="ctitle2" placeholder="Title">
 			</div>
 			<div class = "col-sm-4">
 				<input type="text" name="credit2" oninput="findTotal()" id="credit2" placeholder="Credits" class="cc">
@@ -370,10 +370,10 @@
 
 		<div class = "row" id="class_3" style="display:none">
         	<div class = "col-sm-4">
-				3. <input type="text" name="cid3" id="cid3" oninput="checkId(this.id,5)" placeholder="ID">
+				3. <input type="text" name="cid3" id="cid3" placeholder="ID">
 			</div>
 			<div class = "col-sm-4">
-				<input type="text" name="ctitle3" id="ctitle3" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+				<input type="text" name="ctitle3" id="ctitle3" placeholder="Title">
 			</div>
 			<div class = "col-sm-4">
 				<input type="text" name="credit3" oninput="findTotal()" id="credit3" placeholder="Credits" class="cc">
@@ -384,10 +384,10 @@
 
 		<div class = "row" id="class_4" style="display:none">
         	<div class = "col-sm-4">
-				4. <input type="text" name="cid4" id="cid4" oninput="checkId(this.id,5)" placeholder="ID">
+				4. <input type="text" name="cid4" id="cid4" placeholder="ID">
 			</div>
 			<div class = "col-sm-4">
-				<input type="text" name="ctitle4" id="ctitle4" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+				<input type="text" name="ctitle4" id="ctitle4" placeholder="Title">
 			</div>
 			<div class = "col-sm-4">
 				<input type="text" name="credit4" oninput="findTotal()" id="credit4" placeholder="Credits" class="cc">
@@ -398,10 +398,10 @@
 
 		<div class = "row" id="class_5" style="display:none">
         	<div class = "col-sm-4">
-				5. <input type="text" name="cid5" id="cid5" oninput="checkId(this.id,5)" placeholder="ID">
+				5. <input type="text" name="cid5" id="cid5" placeholder="ID">
 			</div>
 			<div class = "col-sm-4">
-				<input type="text" name="ctitle5" id="ctitle5" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+				<input type="text" name="ctitle5" id="ctitle5" placeholder="Title">
 			</div>
 			<div class = "col-sm-4">
 				<input type="text" name="credit5" oninput="findTotal()" id="credit5" placeholder="Credits" class="cc">
@@ -411,10 +411,10 @@
 
         <div class = "row" id="class_6" style="display:none">
         	<div class = "col-sm-4">
-        		6. <input type="text" name="cid6" id="cid6" oninput="checkId(this.id,5)" placeholder="ID">
+        		6. <input type="text" name="cid6" id="cid6" placeholder="ID">
         	</div>
         	<div class = "col-sm-4">
-        		<input type="text" name="ctitle6" id="ctitle6" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+        		<input type="text" name="ctitle6" id="ctitle6" placeholder="Title">
         	</div>
         	<div class = "col-sm-4">
         		<input type="text" name="credit6" oninput="findTotal()" id="credit6" placeholder="Credits" class="cc">
@@ -425,10 +425,10 @@
 
         <div class = "row" id="class_7" style="display:none">
             <div class = "col-sm-4">
-                7. <input type="text" name="cid7" id="cid7" oninput="checkId(this.id,5)" placeholder="ID">
+                7. <input type="text" name="cid7" id="cid7" placeholder="ID">
             </div>
             <div class = "col-sm-4">
-                <input type="text" name="ctitle7" id="ctitle7" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+                <input type="text" name="ctitle7" id="ctitle7" placeholder="Title">
             </div>
             <div class = "col-sm-4">
                 <input type="text" name="credit7" oninput="findTotal()" id="credit7" placeholder="Credits" class="cc">
@@ -438,10 +438,10 @@
 
         <div class = "row" id="class_8" style="display:none">
             <div class = "col-sm-4">
-                8. <input type="text" name="cid8" id="cid8" oninput="checkId(this.id,5)" placeholder="ID">
+                8. <input type="text" name="cid8" id="cid8" placeholder="ID">
             </div>
             <div class = "col-sm-4">
-                <input type="text" name="ctitle8" id="ctitle8" oninput="checkAlphaNumeric(this.id,true)" placeholder="Title">
+                <input type="text" name="ctitle8" id="ctitle8" placeholder="Title">
             </div>
             <div class = "col-sm-4">
                 <input type="text" name="credit8" oninput="findTotal()" id="credit8" placeholder="Credits" class="cc">
@@ -468,7 +468,7 @@
 		<label for="tandc"> All information provided is correct to my knowledge.</label><br><br>
 
 		<label for="stusign" style="font-weight: normal">Student's Signature</label>
-		<input type="text" required name="stusign" id="stusign" oninput="checkLetters(this.id,true)" placeholder="Student Signature"> &nbsp;
+		<input type="text" required name="stusign" id="stusign" placeholder="Student Signature"> &nbsp;
 
 		<label for="studate" style="font-weight: normal">Date</label>
 		<input type="text" required name="studate" id="studate" oninput="checkDate(this.id)" placeholder="Date"> &nbsp;

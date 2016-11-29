@@ -110,11 +110,15 @@
                     echo "<h3>Courses</h3>";
 
                     echo '<div class = "row">';
-                        echo '<div class = "col-sm-6">';
-                            echo "<h5>Course</h5>";
-                            echo "1. ".$result[0]["cid1"]." ".$result[0]["ctitle1"];
+                        echo '<div class = "col-sm-3">';
+                            echo "<h5>Course ID</h5>";
+                            echo "1. ".$result[0]["cid1"];
                         echo "</div>";
-                        echo '<div class = "col-sm-6">';
+                         echo '<div class = "col-sm-3">';
+                            echo "<h5>Course Title</h5>";
+                            echo $result[0]["ctitle1"];
+                        echo "</div>";
+                        echo '<div class = "col-sm-3">';
                             echo "<h5>Units</h5>";
                             echo $result[0]["credit1"]."<br>";
                         echo "</div>";
