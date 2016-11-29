@@ -46,11 +46,17 @@
                             echo "<h5>Student Name</h5>".$result[0]["first_name"]." ".$result[0]["last_name"];
                         echo "</div>";
                         echo '<div class ="col-sm-3">';
-                            echo "<h5>Student's Email</h5>".$result[0]["email_student"];
+                            echo "<h5>Student ID</h5>".$result[0]["stu_id"];
                         echo "</div>";
                         echo '<div class ="col-sm-3">';
                             echo "<h5>Major</h5>".$result[0]["major"];
                         echo "</div>";
+                        echo '<div class ="col-sm-3">';
+                            echo "<h5>Student's Email</h5>".$result[0]["email_student"];
+                        echo "</div>";
+                    echo "</div>";
+
+                    echo '<div class = "row">';
                         echo '<div class ="col-sm-3">';
                             echo "<h5>Advisor</h5>".$result[0]["advisor"];
                         echo "</div>";
@@ -110,11 +116,15 @@
                     echo "<h3>Courses</h3>";
 
                     echo '<div class = "row">';
-                        echo '<div class = "col-sm-6">';
-                            echo "<h5>Course</h5>";
-                            echo "1. ".$result[0]["cid1"]." ".$result[0]["ctitle1"];
+                        echo '<div class = "col-sm-3">';
+                            echo "<h5>Course ID</h5>";
+                            echo "1. ".$result[0]["cid1"];
                         echo "</div>";
-                        echo '<div class = "col-sm-6">';
+                        echo '<div class = "col-sm-3">';
+                            echo "<h5>Title</h5>";
+                            echo $result[0]["ctitle1"];
+                        echo "</div>";
+                        echo '<div class = "col-sm-3">';
                             echo "<h5>Units</h5>";
                             echo $result[0]["credit1"]."<br>";
                         echo "</div>";
