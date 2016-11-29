@@ -125,6 +125,7 @@
                     document.getElementById('TAYes').style.display = 'block';
                     document.getElementById("is_ra").value="false";
                 }
+		findTotal();
             }
             function checkId(id,len) {
                 var val = document.getElementById(id).value;
