@@ -121,7 +121,7 @@
 		$to = $ademail;
 		// $to      = strtolower($firstname[0]).strtolower($lastname)."@scu.edu";
 		$subject = "I have submitted a form";
-		$message = "Please approve my form at students.engr.scu.edu/~mdemeter/php-cgi/get_student_info.php?email=$email_student!\n\nSincerely,\n$firstname $lastname";
+		$message = "Please approve my form at students.engr.scu.edu/~".$user."/php-cgi/get_student_info.php?email=$email_student!\n\nSincerely,\n$firstname $lastname";
 		$headers = "From: $firstname";
 		mail($to, $subject, $message, $headers);
 		// echo "Sent an email to $to <br>";
