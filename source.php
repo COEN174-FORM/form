@@ -30,7 +30,7 @@
 			</div>
 			<div class ="col-sm-3">
 				<h5>SCU ID</h5>
-				<input type="text" required name="id" id="id" placeholder="SCU ID"><br>
+				<input type="text" required name="stu_id" id="id" placeholder="SCU ID"><br>
 			</div>
 			<div class ="col-sm-3">
 				<h5>Major</h5>
