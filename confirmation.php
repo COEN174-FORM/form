@@ -14,7 +14,7 @@
                 echo '<meta http-equiv="refresh" content="2; url=final.php?email='.$email_student.'" />';
                 echo "If you're not redirected in 2 seconds, you can manually access the last page at:\n";
                 $link = "final.php?email=".$email_student;
-                echo "<a href='".$link."'>".$link."</a>";
+                echo "<a href='".$link."'>students.engr.scu.edu/~".$user."/php-cgi/".$link."</a><br>";
             }
         ?>
 
