@@ -79,7 +79,7 @@
                 $to = $_POST["next_email"];
                 // $to      = strtolower($firstname[0]).strtolower($lastname)."@scu.edu";
                 $subject = "I have approved a form";
-                $message = "Please take a look at the form at students.engr.scu.edu/~mdemeter/php-cgi/get_student_info.php?email=$email_student!\nSincerely,\n".$sig;
+                $message = "Please take a look at the form at students.engr.scu.edu/~".$user."/php-cgi/get_student_info.php?email=$email_student!\nSincerely,\n".$sig;
                 $headers = "From: ".$sig;
                 mail($to, $subject, $message, $headers);
             }
