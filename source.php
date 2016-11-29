@@ -250,7 +250,7 @@
 
             function addClass() {
                 var number = parseInt(document.getElementById('course_val').value);
-                if(number < 8) {
+                if(number < 6) {
                     number += 1;
                     if(document.getElementById('class_'+number).style.display = "none") {
                         if(!isNaN(document.getElementById('credit'+(number-1)).value)) {
