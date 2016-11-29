@@ -1,3 +1,5 @@
+<!-- Deletes all the information in the form -->
+
 <!DOCTYPE HTML>
 <html>
     <head>

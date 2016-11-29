@@ -1,3 +1,5 @@
+<!-- Sends the email to student that the form has been rejected -->
+
 <!DOCTYPE HTML>
 <html>
     <head>

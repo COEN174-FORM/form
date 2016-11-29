@@ -1,3 +1,5 @@
+<!-- Confirmation that the email and the populated form has been sent -->
+
 <!DOCTYPE HTML>
 <html>
     <head>

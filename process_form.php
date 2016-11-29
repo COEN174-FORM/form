@@ -1,9 +1,12 @@
+<!-- Submits the information to the data base and send an email -->
+
 <html>
 <head>
 	<title> Form Confirmation </title>
 </head>
 <body>
 <?php
+	// Database credentials
 	$host = "dbserver.engr.scu.edu";
     $table = "Students";
     $secrets = fopen("secrets.txt", "r");
@@ -13,13 +16,16 @@
     $pass = trim($pass, "\n");
     $db = "sdb_".$user;
 	try {
+		// Establish database session
 		$pdo = new PDO("mysql:host=$host", $user, $pass);
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+		// Create a database if it doesn't exist yet
 		$sql = "CREATE DATABASE IF NOT EXISTS $db";
 		$pdo->exec($sql);
 		$sql = "USE $db";
 		$pdo->exec($sql);
+		// Create a table if it doesn't exist yet
 		$sql = "CREATE TABLE IF NOT EXISTS $table (first_name VARCHAR(255), last_name VARCHAR(255), email_student VARCHAR(255) PRIMARY KEY, stu_id VARCHAR(255), major VARCHAR(255), advisor VARCHAR(255), ademail VARCHAR(255), atype VARCHAR(255), year VARCHAR(255), quarter VARCHAR(255), hdept VARCHAR(255), cid1 VARCHAR(255), ctitle1 VARCHAR(255),credit1 VARCHAR(255), cid2 VARCHAR(255), ctitle2 VARCHAR(255),credit2 VARCHAR(255), cid3 VARCHAR(255), ctitle3 VARCHAR(255),credit3 VARCHAR(255), cid4 VARCHAR(255), ctitle4 VARCHAR(255),credit4 VARCHAR(255), cid5 VARCHAR(255), ctitle5 VARCHAR(255),credit5 VARCHAR(255), cid6 VARCHAR(255), ctitle6 VARCHAR(255), credit6 VARCHAR(255), total VARCHAR(255), stusign VARCHAR(255), studate VARCHAR(255), adv_sig_1 VARCHAR(255), adv_sig_2 VARCHAR(255), adv_sig_3 VARCHAR(255), adv_sig_4 VARCHAR(255), adv_sig_5 VARCHAR(255), adv_sig_6 VARCHAR(255), adv_sig_7 VARCHAR(255), adv_sig_8 VARCHAR(255), adv_sig_9 VARCHAR(255), adv_sig_10 VARCHAR(255), ra_acc VARCHAR(255), ra_fund VARCHAR(255), ra_dept VARCHAR(255), ra_pgm VARCHAR(255), ra_act VARCHAR(255), ra_class VARCHAR(255), ra_id VARCHAR(255))";
 		$pdo->exec($sql);
         $is_ra = $_POST["is_ra"];

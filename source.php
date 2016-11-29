@@ -1,3 +1,4 @@
+<!-- Initial Landing page where student will populate fields -->
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -14,6 +15,8 @@
         <div class = "header-bar">
     		<img src="scu.jpg" alt="Santa Clara Uniersity">
         </div>
+
+        <!-- HTML code to display the form and text fields -->
         
 		<form action="process_form.php" method="post">
 
@@ -61,6 +64,9 @@
 		<h3>Position Data</h3>
 
 		<script type="text/javascript">
+
+            // Automatically sets the date field
+
             function setTheDate() {
                 var element = document.getElementById('studate');
                 var dt = new Date();
@@ -77,12 +83,18 @@
                     document.getElementById('studate').value = val;
                 }
             }
+
+            // Sets the signature to the same as the Name fields
+
             function setName(id) {
                 checkLetters(id);
                 var fname = document.getElementById('first_name').value;
                 var lname = document.getElementById('last_name').value;
                 document.getElementById('stusign').value = fname+" "+lname;
             }
+
+            //Adds $150 to the total if student clicks the engineer major checkbox
+
             function engrCheck() {
                 var val = parseInt(document.getElementById('total').value);
                 if(isNaN(val)) {
@@ -100,6 +112,9 @@
                     }
                 }
             }
+
+            // Will hide RA fields if Student clicks TA and will hide TA fields if Student clicks RA
+
             function yesnoCheck() {
                 if (document.getElementById('RA').checked) {
                 	document.getElementById('RAYes').style.display = 'block';
@@ -140,6 +155,9 @@
                 }
                 document.getElementById(id).value = prev_val;
             }
+
+            //Validates fields that must be poopulated with letters
+
             function checkLetters(id,space=false) {
                 var val = document.getElementById(id).value;
                 var prev_val = "";
@@ -157,6 +175,9 @@
                 }
                 document.getElementById(id).value = prev_val;
             }
+
+            //Validates fields that must be populated with numbers
+
             function checkAlphaNumeric(id,space=false) {
                 var val = document.getElementById(id).value;
                 var prev_val = "";
@@ -174,6 +195,9 @@
                 }
                 document.getElementById(id).value = prev_val;
             }
+
+            //Function to calculate the units total in terms of dollars in real time
+
             function findTotal(){
                 if(document.getElementById('ta_option').value == "Full Time") {
                     document.getElementById('cred_max').value = 8;
@@ -221,6 +245,9 @@
                     }
                 }
             }
+
+            //Will show another set of course fields
+
             function addClass() {
                 var number = parseInt(document.getElementById('course_val').value);
                 if(number < 8) {
@@ -236,6 +263,9 @@
                     }
                 }
             }
+
+             //Will remove another set of course fields
+
             function removeClass() {
                 var number = parseInt(document.getElementById('course_val').value);
                 if(number > 1) {
@@ -250,7 +280,10 @@
                     }
                 }
             }
+            
     	</script>
+
+
 		<label for="TA" style="font-weight: normal">TA</label>
         <input type="radio" required onclick="yesnoCheck()" name="atype" id="TA" value="TA" style="display:inline">
 		<label for="RA" style="font-weight: normal">RA</label>
