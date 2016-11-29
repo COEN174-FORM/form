@@ -10,9 +10,11 @@
 	</head>
 
 	<body>
+
         <div class = "header-bar">
     		<img src="scu.jpg" alt="Santa Clara Uniersity">
         </div>
+        
 		<form action="process_form.php" method="post">
 
 		<center><h2><u>Tuition and Fees Payment Authorization for Graduate Students</u></h2></center>

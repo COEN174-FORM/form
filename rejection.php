@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
     <head>
         <title> Tuition and Fees Payment Authorization for Graduate Students </title>
