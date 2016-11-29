@@ -118,67 +118,85 @@
                     echo "<h3>Courses</h3>";
 
                     echo '<div class = "row">';
-                        echo '<div class = "col-sm-6">';
-                            echo "<h5>Course</h5>";
-                            echo "1. ".$result[0]["cid1"]." ".$result[0]["ctitle1"];
+                        echo '<div class = "col-sm-3">';
+                            echo "<h5>Course ID</h5>";
+                            echo "1. ".$result[0]["cid1"];
                         echo "</div>";
-                        echo '<div class = "col-sm-6">';
+                         echo '<div class = "col-sm-3">';
+                            echo "<h5>Course Title</h5>";
+                            echo $result[0]["ctitle1"];
+                        echo "</div>";
+                        echo '<div class = "col-sm-3">';
                             echo "<h5>Units</h5>";
                             echo $result[0]["credit1"]."<br>";
                         echo "</div>";
                     echo "</div>";
-
-
                     if($result[0]["cid2"] != '') {
                         echo '<div class = "row">';
-                            echo '<div class = "col-sm-6">';
-                                echo "2. ".$result[0]["cid2"]." ".$result[0]["ctitle2"];
+                            echo '<div class = "col-sm-3">';
+                                echo "2. ".$result[0]["cid2"];
                             echo "</div>";
-                            echo '<div class = "col-sm-6">';
+			    echo '<div class = "col-sm-3">';
+				echo $result[0]["ctitle2"];
+			    echo "</div>";
+                            echo '<div class = "col-sm-3">';
                                 echo $result[0]["credit2"]."<br>";
                             echo "</div>";
                         echo "</div>";
                     }
                     if($result[0]["cid3"] != '') {
                         echo '<div class = "row">';
-                            echo '<div class = "col-sm-6">';
-                                echo "3. ".$result[0]["cid3"]." ".$result[0]["ctitle3"];
+                            echo '<div class = "col-sm-3">';
+                                echo "3. ".$result[0]["cid3"];
                             echo "</div>";
-                            echo '<div class = "col-sm-6">';
+			    echo '<div class = "col-sm-3">';
+				echo $result[0]["ctitle3"];
+			    echo "</div>";
+                            echo '<div class = "col-sm-3">';
                                 echo $result[0]["credit3"]."<br>";
                             echo "</div>";
                         echo "</div>";
                     }
                     if($result[0]["cid4"] != '') {
                         echo '<div class = "row">';
-                            echo '<div class = "col-sm-6">';
-                                echo "4. ".$result[0]["cid4"]." ".$result[0]["ctitle4"];
+                            echo '<div class = "col-sm-3">';
+                                echo "4. ".$result[0]["cid4"];
                             echo "</div>";
-                            echo '<div class = "col-sm-6">';
+			    echo '<div class = "col-sm-3">';
+				echo $result[0]["ctitle4"];
+			    echo "</div>";
+                            echo '<div class = "col-sm-3">';
                                 echo $result[0]["credit4"]."<br>";
                             echo "</div>";
                         echo "</div>";
                     }
                     if($result[0]["cid5"] != '') {
                         echo '<div class = "row">';
-                            echo '<div class = "col-sm-6">';
-                                echo "5. ".$result[0]["cid5"]." ".$result[0]["ctitle5"];
+                            echo '<div class = "col-sm-3">';
+                                echo "5. ".$result[0]["cid5"];
                             echo "</div>";
-                            echo '<div class = "col-sm-6">';
+			    echo '<div class = "col-sm-3">';
+				echo $result[0]["ctitle5"];
+			    echo "</div>";
+                            echo '<div class = "col-sm-3">';
                                 echo $result[0]["credit5"]."<br>";
                             echo "</div>";
                         echo "</div>";
                     }
                     if($result[0]["cid6"] != '') {
                         echo '<div class = "row">';
-                            echo '<div class = "col-sm-6">';
-                                echo "6. ".$result[0]["cid6"]." ".$result[0]["ctitle6"];
+                            echo '<div class = "col-sm-3">';
+                                echo "6. ".$result[0]["cid6"];
                             echo "</div>";
-                            echo '<div class = "col-sm-6">';
+			    echo '<div class = "col-sm-3">';
+				echo $result[0]["ctitle6"];
+			    echo "</div>";
+                            echo '<div class = "col-sm-3">';
                                 echo $result[0]["credit6"]."<br>";
                             echo "</div>";
                         echo "</div>";
                     }
+
 
                     echo '<br> <div class = "divider"> </div><br>';
 
