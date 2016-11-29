@@ -58,7 +58,7 @@
                         echo '<div class ="col-sm-3">';
                             echo "<h5>Advisor</h5>".$result[0]["advisor"];
                         echo "</div>";
-                    echo "</div>"
+                    echo "</div>";
 
                     echo '<br> <div class = "divider"> </div>';
 
