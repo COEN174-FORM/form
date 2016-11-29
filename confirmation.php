@@ -7,11 +7,12 @@
             $num = $_POST["advisor_num"];
             $is_last = $_POST["is_last"];
             $email_student = $_POST["student_email"];
+            $secrets = fopen("secrets.txt", "r");
             $user = fgets($secrets);
             $user = trim($user, "\n");
             if($is_last == "true") {
                 echo '<meta http-equiv="refresh" content="2; url=final.php?email='.$email_student.'" />';
-                echo "If you're not redirected in 2 seconds, you can manually access the last page at:";
+                echo "If you're not redirected in 2 seconds, you can manually access the last page at:\n";
                 $link = "students.engr.scu.edu/~".$user."/php-cgi/final.php?email=".$email_student;
                 echo "<a href='".$link."'>".$link."</a>";
             }
@@ -20,10 +21,6 @@
         <title> Tuition and Fees Payment Authorization for Graduate Students </title>
     </head>
     <body>
-
-        <div class = "header-bar">
-                <img src="scu.jpg" alt="Santa Clara Uniersity">
-        </div>
 
         <?php
             $host = "dbserver.engr.scu.edu";
