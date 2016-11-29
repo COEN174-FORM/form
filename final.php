@@ -38,21 +38,27 @@
                     echo "<center><h2><u>Tuition and Fees Payment Authorization for Graduate Students</u></h2></center>";
 
                     echo "<h3>Student Data</h3>";
-
+                    
                     echo '<div class = "row">';
                         echo '<div class ="col-sm-3">';
                             echo "<h5>Student Name</h5>".$result[0]["first_name"]." ".$result[0]["last_name"];
                         echo "</div>";
                         echo '<div class ="col-sm-3">';
-                            echo "<h5>Student's Email</h5>".$result[0]["email_student"];
+                            echo "<h5>ID Number</h5>".$result[0]["stu_id"];
                         echo "</div>";
                         echo '<div class ="col-sm-3">';
                             echo "<h5>Major</h5>".$result[0]["major"];
                         echo "</div>";
-                            echo '<div class ="col-sm-3">';
-                                echo "<h5>Advisor</h5>".$result[0]["advisor"];
-                            echo "</div>";
+                        echo '<div class ="col-sm-3">';
+                            echo "<h5>Student's Email</h5>".$result[0]["email_student"];
+                        echo "</div>";
                     echo "</div>";
+
+                     echo '<div class = "row">';
+                        echo '<div class ="col-sm-3">';
+                            echo "<h5>Advisor</h5>".$result[0]["advisor"];
+                        echo "</div>";
+                    echo "</div>"
 
                     echo '<br> <div class = "divider"> </div>';
 

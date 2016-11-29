@@ -25,10 +25,10 @@
         $is_ra = $_POST["is_ra"];
         $statement = null;
         if($is_ra == "false") {
-    		$statement = $pdo->prepare("INSERT IGNORE INTO $table (first_name, last_name, email_student, major, advisor, ademail, atype, year, quarter, hdept, cid1, ctitle1, credit1, cid2, ctitle2, credit2, cid3, ctitle3, credit3, cid4, ctitle4, credit4, cid5, ctitle5, credit5, cid6, ctitle6, credit6, total, stusign, studate) VALUES (:fname, :lname, :email_student, :major, :advisor, :ademail, :atype, :year, :quarter, :hdept, :cid1, :ctitle1, :credit1, :cid2, :ctitle2, :credit2, :cid3, :ctitle3, :credit3, :cid4, :ctitle4, :credit4, :cid5, :ctitle5, :credit5, :cid6, :ctitle6, :credit6, :total, :stusign, :studate)");
+    		$statement = $pdo->prepare("INSERT IGNORE INTO $table (first_name, last_name, email_student, stu_id major, advisor, ademail, atype, year, quarter, hdept, cid1, ctitle1, credit1, cid2, ctitle2, credit2, cid3, ctitle3, credit3, cid4, ctitle4, credit4, cid5, ctitle5, credit5, cid6, ctitle6, credit6, total, stusign, studate) VALUES (:fname, :lname, :email_student, :major, :advisor, :ademail, :atype, :year, :quarter, :hdept, :cid1, :ctitle1, :credit1, :cid2, :ctitle2, :credit2, :cid3, :ctitle3, :credit3, :cid4, :ctitle4, :credit4, :cid5, :ctitle5, :credit5, :cid6, :ctitle6, :credit6, :total, :stusign, :studate)");
         }
         else {
-            $statement = $pdo->prepare("INSERT IGNORE INTO $table (first_name, last_name, email_student, major, advisor, ademail, atype, year, quarter, hdept, ra_acc, ra_fund, ra_dept, ra_pgm, ra_act, ra_class, ra_id, cid1, ctitle1, credit1, cid2, ctitle2, credit2, cid3, ctitle3, credit3, cid4, ctitle4, credit4, cid5, ctitle5, credit5, cid6, ctitle6, credit6, total, stusign, studate) VALUES (:fname, :lname, :email_student, :major, :advisor, :ademail, :atype, :year, :quarter, :hdept, :ra_acc, :ra_fund, :ra_dept, :ra_pgm, :ra_act, :ra_class, :ra_id, :cid1, :ctitle1, :credit1, :cid2, :ctitle2, :credit2, :cid3, :ctitle3, :credit3, :cid4, :ctitle4, :credit4, :cid5, :ctitle5, :credit5, :cid6, :ctitle6, :credit6, :total, :stusign, :studate)");
+            $statement = $pdo->prepare("INSERT IGNORE INTO $table (first_name, last_name, email_student, stu_id, major, advisor, ademail, atype, year, quarter, hdept, ra_acc, ra_fund, ra_dept, ra_pgm, ra_act, ra_class, ra_id, cid1, ctitle1, credit1, cid2, ctitle2, credit2, cid3, ctitle3, credit3, cid4, ctitle4, credit4, cid5, ctitle5, credit5, cid6, ctitle6, credit6, total, stusign, studate) VALUES (:fname, :lname, :email_student, :major, :advisor, :ademail, :atype, :year, :quarter, :hdept, :ra_acc, :ra_fund, :ra_dept, :ra_pgm, :ra_act, :ra_class, :ra_id, :cid1, :ctitle1, :credit1, :cid2, :ctitle2, :credit2, :cid3, :ctitle3, :credit3, :cid4, :ctitle4, :credit4, :cid5, :ctitle5, :credit5, :cid6, :ctitle6, :credit6, :total, :stusign, :studate)");
             $statement->bindParam(':ra_acc', $ra_acc);
             $statement->bindParam(':ra_fund', $ra_fund);
             $statement->bindParam(':ra_dept', $ra_dept);
@@ -50,6 +50,7 @@
 		$statement->bindParam(':fname', $firstname);
 		$statement->bindParam(':lname', $lastname);
 		$statement->bindParam(':email_student', $email_student);
+		$statement->bindParam(':stu_id', $stu_id);
 		$statement->bindParam(':major', $major);
 		$statement->bindParam(':advisor', $advisor);
 		$statement->bindParam(':ademail', $ademail);
@@ -81,6 +82,7 @@
 		$firstname = $_POST["first_name"];
 		$lastname = $_POST["last_name"];
 		$email_student = $_POST["email"];
+		$stu_id = $_POST["id"];
  		$major = $_POST["major"];
 		$advisor = $_POST["advisor"];
 		$ademail = $_POST["ademail"];

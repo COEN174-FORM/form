@@ -10,8 +10,8 @@
 	</head>
 
 	<body>
-        <div style="width:100%;background-color:#F8F8F8">
-    		<img src="scu.jpg" alt="Santa Clara Uniersity" style="display:block;margin:auto;width:20%;height:20%;">
+        <div class = "header-bar">
+    		<img src="scu.jpg" alt="Santa Clara Uniersity">
         </div>
 		<form action="process_form.php" method="post">
 
