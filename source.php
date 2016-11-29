@@ -124,8 +124,7 @@
                     document.getElementById('RAYes').style.display = 'none';
                     document.getElementById('TAYes').style.display = 'block';
                     document.getElementById("is_ra").value="false";
-                }
-		findTotal();
+		}
             }
             function checkId(id,len) {
                 var val = document.getElementById(id).value;
@@ -291,7 +290,7 @@
         <div id="TAYes" style="display:none">
             <div class="row">
                <div class ="col-sm-3">
-                    <select id="ta_option" class="ta_option">
+                    <select id="ta_option" class="ta_option" onChange="findTotal()">
                         <option value="Full Time">Full Time</option>
                         <option value="2/3 Time">2/3 Time</option>
                         <option value="1/3 Time">1/3 Time</option>
