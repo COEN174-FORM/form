@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERNAME='mdemeter' # Username used for directory
+USERNAME='' # Username used for directory
 P="/webpages/$USERNAME" # Directory where we will create php-cgi folders
 
 DBASE_UNAME='' # MySQL Database Username
