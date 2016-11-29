@@ -314,7 +314,7 @@
 			</div>
 			<div class ="col-sm-4">
 				<h5>Quarter</h5>
-				<input type="text" required name="quarter" id="quarter"eholder="Quarter"><br>
+				<input type="text" required name="quarter" id="quarter" placeholder="Quarter"><br>
 			</div>
 			<div class ="col-sm-4">
 				<h5>Hiring Dept/Pgm</h5>
