@@ -254,11 +254,9 @@
                     number += 1;
                     if(document.getElementById('class_'+number).style.display = "none") {
                         if(!isNaN(document.getElementById('credit'+(number-1)).value)) {
-                            if(document.getElementById('cred_total').value < document.getElementById('cred_max').value) {
-                                document.getElementById('class_'+number).style.display = "block";
-                                document.getElementById('class_'+number+'_break').style.display = "block";
-                                document.getElementById('course_val').value = number;
-                            }
+                            document.getElementById('class_'+number).style.display = "block";
+                            document.getElementById('class_'+number+'_break').style.display = "block";
+                            document.getElementById('course_val').value = number;
                         }
                     }
                 }
