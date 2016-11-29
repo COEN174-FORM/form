@@ -10,8 +10,8 @@
 	</head>
 
 	<body>
-        <div class = "header-bar">
-    		<img src="scu.jpg" alt="Santa Clara Uniersity">
+        <div style="width:100%;background-color:#F8F8F8">
+    		<img src="scu.jpg" alt="Santa Clara Uniersity" style="display:block;margin:auto;width:20%;height:20%;">
         </div>
 		<form action="process_form.php" method="post">
 
@@ -308,15 +308,15 @@
 		</div>
 
 		<div class = "row">
-			<div class ="col-sm-3">
+			<div class ="col-sm-4">
 				<h5>Academic Year</h5>
 				<input type="text" required name="year" id="year" oninput="checkId(this.id,4)" placeholder="Academic Year"><br>
 			</div>
-			<div class ="col-sm-3">
+			<div class ="col-sm-4">
 				<h5>Quarter</h5>
 				<input type="text" required name="quarter" id="quarter" oninput="checkLetters(this.id)" placeholder="Quarter"><br>
 			</div>
-			<div class ="col-sm-3">
+			<div class ="col-sm-4">
 				<h5>Hiring Dept/Pgm</h5>
 				<input type="text" required name="hdept" id="hdept" oninput="checkLetters(this.id,true)" placeholder="Hiring Department"><br>
 			</div>
@@ -457,7 +457,6 @@
 
         <br>
 		<div class = "divider"> </div>
-<<<<<<< Updated upstream
         <br>
         <div style="text-align:center">
             <label for="total" style="font-weight: normal">Total: $</label>
@@ -470,40 +469,6 @@
 
 		<label for="stusign" style="font-weight: normal">Student's Signature</label>
 		<input type="text" required name="stusign" id="stusign" oninput="checkLetters(this.id,true)" placeholder="Student Signature"> &nbsp;
-=======
-		<br>
-
-<<<<<<< Updated upstream
-		<input type="checkbox" required name="engineerTotal" id="engineerTotal" onClick="engrCheck()" value="true">
-=======
-<<<<<<< Updated upstream
-		<input type="checkbox" required name="engineerTotal" id="engineerTotal" value="true">
->>>>>>> Stashed changes
-		<label for="engineerTotal"> Engineering Design Center and Student Association Fee ($150 per quarter) </label>
-        <script type="text/javascript">
-
-        </script>
-<<<<<<< Updated upstream
-		TOTAL: $ <input type="text" name="total" id="total" value="0"><br><br>
-=======
-		TOTAL: $ <input type="text" name="total" id="total"><br><br>
-=======
-		<input type="checkbox" required name="engineerTotal" id="engineerTotal" value="true"> &nbsp;
-		<label for="engineerTotal"> Engineering Design Center and Student Association Fee ($150 per quarter) </label><br>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-
-		<input type="checkbox" required name="tandc" id="tandc" value="true"> &nbsp;
-		<label for="tandc"> All information provided is correct to my knowledge.</label><br><br>
-
-		TOTAL: &nbsp; $<input type="text" name="total"><br><br>
-
-		<b>Student's Signature</b>
-		<input type="text" name="stusign"> &nbsp;
-
-		<b>Date</b>
-		<input type="text" name="studate"> &nbsp;
->>>>>>> Stashed changes
 
 		<label for="studate" style="font-weight: normal">Date</label>
 		<input type="text" required name="studate" id="studate" oninput="checkDate(this.id)" placeholder="Date"> &nbsp;
