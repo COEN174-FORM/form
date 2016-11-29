@@ -1,5 +1,5 @@
 Files in the drive:
-confirmation.php		Page after TA submits form. 
+confirmation.php		Page after advisor/signer approves form. 
 deletion.php			Page after advisor deletes form.
 final.php			Page after the final approver approves the form.
 get_student_info.php		Page displayed for each advisor/signer.
