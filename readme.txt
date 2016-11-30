@@ -31,4 +31,4 @@ Step 3)
 
 OR
 
-Alternatively, in the install script, fill in the correct database creditials and the correct install directory. Running the script will fetch our current version from GitHub.  
+Alternatively, in the install script, fill in the correct database credentials and the correct install directory. Running the script will fetch our current version from GitHub.  
