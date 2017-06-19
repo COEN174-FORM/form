@@ -14,7 +14,7 @@ Files in the drive:
 - install - Install script (don't forget to change information)
 - java.js - Holds the javascript code used in the websites 
 - process_form.php - Stores the data written by the TA into database and send email to advisor
-- readme.txt - This file
+- readme.md - This file
 - rejection.php - Page displayed to the advisor after they reject the form
 - scu.jpg - Banner at the top of each page
 - source.php - Page the TA/RA fills in. 
