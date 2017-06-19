@@ -1,4 +1,7 @@
-## Tuition and Fees Payment Authorization Form for Graduate Students
+### Tuition and Fees Payment Authorization Form for Graduate Students
+
+---
+
 ### <div style="text-align:center">Marton Demeter, Jonathan Ho, Sanika Lakka</div>
 
 ---
@@ -27,4 +30,4 @@ Steps to set up the system:
 
 OR
 
-Alternatively, in the install script, fill in the correct database credentials and the correct install directory. Running the script will fetch the current version from GitHub.  
+1. Fill in the correct database credentials and install directory in the install script. Running the script will fetch the current version from GitHub.  
