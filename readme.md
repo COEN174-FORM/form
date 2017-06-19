@@ -1,5 +1,5 @@
 ## Tuition and Fees Payment Authorization Form for Graduate Students
-### Marton Demeter, Jonathan Ho, Sanika Lakka
+### <div style="text-align:center">Marton Demeter, Jonathan Ho, Sanika Lakka</div>
 
 ---
 
